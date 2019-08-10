@@ -1,0 +1,229 @@
+/*
+Le Chef
+*/
+#chef{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5em 0;
+    .flex{
+        display: flex;
+        justify-content: space-around;
+        .image{
+            width: 46%;
+        }
+        .texte{
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            p{
+                margin-bottom: 0;
+            }
+        }
+    }
+    .bg-anim{
+        content: '';
+        position: absolute;
+        background: #F5F4F0;
+        width: 85vw;
+        height: 60%;
+        z-index: -1;
+        left: 0;
+    }
+}
+
+
+/*
+Slider
+*/
+.swiper1{
+    height: 30vw;
+    width: 94vw;
+    padding: 0em 0 7em 0!important;
+    .swiper-slide{
+        width: 25%;
+    }
+}
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 4em !important;
+}
+.swiper-pagination-bullet {
+    background: $lightColor !important;
+    opacity: .3 !important;
+}
+.swiper-pagination-bullet-active {
+    opacity: 1 !important;
+    background: $color !important;
+}
+.swiper-container.hidden{
+    transform: translate(0);
+}
+
+
+/*
+Le Restaurant
+*/
+#restaurant{
+    margin: 5em 0;
+    position: relative;
+    h3, h4{
+        text-align: center;
+    }
+    .flex{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        margin-top: 4em;
+        .image{
+            width: 46%;
+        }
+        .texte{
+            width: 45%;
+            display: flex;
+            // align-items: center;
+            p{
+                margin: 0;
+            }
+        }
+    }
+    .bg-anim{
+        content: '';
+        position: absolute;
+        background: #F5F4F0;
+        width: 100vw;
+        height: 55%;
+        z-index: -1;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+
+.ouverture{
+    text-align: center;
+    margin: 5em 0 7em 0;
+    font-size: 1.2em;
+    span{
+        font-size: .9em;
+        display: inline-block;
+        color: $color;
+    }
+}
+
+
+/*
+Nos producteurs
+*/
+#producteurs{
+    margin-bottom: 9em;
+    min-height: 0;
+    h3{
+        text-align: center;
+    }
+    .col-3{
+        width: 94vw;
+        margin: 4em auto 0 auto;
+        display: grid;
+        grid-column-gap: 20px;
+        grid-template-columns: 1fr 1fr 1fr;
+        .single-prod{
+            margin-bottom: 20px;
+            height: 220px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &::after{
+                content: '';
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                background: rgba($color: black, $alpha: .5);
+            }
+            .texte{
+                color: white;
+                z-index: 1;
+                text-align: center;
+                h5{
+                    font-family: 'red hat display', sans-serif;
+                    text-transform: uppercase;
+                    letter-spacing: 1px;
+                    font-size: 1.5em;
+                    font-weight: 400;
+                    margin: 0;
+                }
+                p{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+
+/*
+Presse
+*/
+#presse{
+    padding: 6em 0;
+    background: #F5F4F0;
+    h3{
+        text-align: center;
+    }
+    .englobe{
+        margin-top: 5em;
+    }
+    .article{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 3em;
+        .article-bg{
+            width: 46%;
+        }
+        .texte{
+            width: 46%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            h5{
+                font-size: 1.7em;
+                font-weight: 400;
+                margin-top: .5em;
+                margin-bottom: 0;
+                letter-spacing: 1px;
+            }
+            a{
+                color: black;
+                font-size: 1.1em;
+            }
+            .article-info{
+                display: flex;
+                justify-content: space-between;
+                border-top: 1px solid gray;
+                margin-top: 2em;
+                p{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+#chef, #restaurant{
+    .bg-anim{
+        width: 0;
+        left: 0;
+        transition: 1s all ease-in-out;
+        &.reveal{
+            width: 85vw;
+        }
+    }
+}

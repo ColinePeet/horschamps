@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <meta description="Le restaurant Hors-Champs by Stefan Jacobs">
+    <title>Evenements</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+
+</head>
+
+<body>
+    <!-- header -->
+    <header class="page-header parallax-window parallax-window4" data-parallax="scroll" data-image-src="/path/to/image.jpg">
+        <nav class="englobe">
+            <ul class="left">
+                <li><a href="restaurant.html">Le restaurant</a></li>
+                <li><a href="chambres.html">Chambres d'hôtes</a></li>
+            </ul>
+            <a class="logo" href="index.html"><img src="img/hors_champs_logo.svg" alt="logo hors-champs"></a>
+            <ul class="right">
+                <li><a href="evenements.html">Evènements</a></li>
+                <li><a href="a-propos.html">A propos</a></li>
+            </ul>
+        </nav>
+        <h1>Evènements</h1>
+        <div class="page-links" style="display:none">
+            <a href="#grange">La grange</a>
+            <a href="#traiteur">Service traiteur</a>
+        </div>
+    </header>
+
+    <!-- contenu de la page -->
+    <main id="page">
+        <!-- La grange -->
+        <section class="small-englobe grange center hidden" >
+            <h2 id="grange">La grange</h2>
+            <!--image pour 2020 -->
+            <img src="img/rustic1.jpg" alt=""  style="display: none">
+            <div class="texte">
+                <p>Notre Grange est actuellement en travaux. Celle-ci sera disponible à la location dès début 2020.
+                    Pour toutes questions ou informations pour une location après cette date, merci de nous
+                    contacter au <strong>0494 42 77 95</strong>.
+                </p>
+            </div>
+        </section>
+
+        <!-- Swiper 1 -->
+        <section class="swiper-container swiper1 englobe" style="display:none">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/rustic2.jpg" alt="image restaurant"></div>
+                <div class="swiper-slide"><img src="img/rustic3.jpeg" alt="image restaurant"></div>
+                <div class="swiper-slide"><img src="img/rustic4.jpeg" alt="image restaurant"></div>
+                <div class="swiper-slide"><img src="img/rustic5.jpeg" alt="image restaurant"></div>
+                <div class="swiper-slide"><img src="img/rustic2.jpg" alt="image restaurant"></div>
+                <div class="swiper-slide"><img src="img/rustic3.jpeg" alt="image restaurant"></div>
+                <div class="swiper-slide"><img src="img/rustic4.jpeg" alt="image restaurant"></div>
+                <div class="swiper-slide"><img src="img/rustic5.jpeg" alt="image restaurant"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </section>
+
+        <!-- service traiteur -->
+        <section class="traiteur hidden englobe">
+            <h2 id="traiteur englobe">Notre service traiteur</h2>
+            <div class="section-flex small-englobe">
+                <img src="img/traiteur3.jpeg" alt="">
+                <div class="texte">
+                    <p>Vous ne le savez peut-être pas mais Stefan et son équipe vous proposent une restauration adaptée
+                        à vos événements avec la même philosophie que le restaurant Hors-Champs .Celle-ci est
+                        disponible dans la grange ou en déplacement. </p>
+                     <p>  
+                    - Menu gastronomique sur mesure <br>
+                    - Walking diner <br>
+                    - Buffet du terroir (matin, midi et soir) <br>
+                    - Barbecue <br>
+                    - Cochon à la broche <br>
+                    - Et bien d'autre </p> 
+                        <p>
+                        Toutes nos offres sont déclinables en version végétarienne. <br> Afin de vous proposer l’offre la plus adaptée à vos souhaits, merci de nous envoyer un email à traiteur@hors-champs.be
+                    </p>
+                </div>
+                
+            </div>
+        </section>
+
+
+
+    </main>
+
+
+    <!-- footer -->
+    <footer>
+        <!-- Newsletter -->
+        <div class="newsletter-form">
+            <p>Inscrivez-vous à notre Newsletter !</p>
+            <form action="">
+                <input placeholder="Votre adresse email" type="email" class="champ"><img src="img/send.png" alt="send"><input
+                    type="submit" value=" " class="submit">
+            </form>
+        </div>
+        <!-- contenu -->
+        <div class="foot-info englobe center">
+            <div class="foot-flex">
+                <h4>Contact</h4>
+                <div class="info">
+                    <p>rue Longue, 8 <br>
+                        7040, Ernage
+                    </p>
+                    <p>02 462 78 98</p>
+                    <p>info@hors-champs.com</p>
+                </div>
+            </div>
+            <div class="foot-flex">
+                <h4>Nos horaires</h4>
+                <div class="info">
+                    <p>Nos horaires ne sont pas encore disponibles.</p>
+                </div>
+            </div>
+            <div class="foot-flex">
+                <h4>Suivez-nous</h4>
+                <div class="social-link">
+                    <a href="">facebook</a><br>
+                    <a href="">instagram</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- credits -->
+        <div class="credits">
+            <p> Copyright © 2019 Hors-Champs. Tous droits réservés</p>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

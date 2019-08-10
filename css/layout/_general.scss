@@ -1,0 +1,111 @@
+@import url("Geomanist-Webfont/stylesheet.css");
+
+@font-face{
+    font-family: "geomanistregular";
+    src: url(../Geomanist-Webfont/geomanist-regular-webfont.woff);
+}
+
+
+/*
+Typo
+*/
+html, body   {
+    font-family: 'geomanistregular', 'sans-serif' !important;
+    margin: 0;
+}
+
+p{
+    line-height: 1.5em;
+    font-size: 1.2em;
+    letter-spacing: 1px;
+}
+a{
+    text-decoration: none;
+}
+*:focus{
+   outline: none;
+}
+
+/*
+Title
+*/
+h1,h2,h3,h4{
+    font-family: 'red hat display', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+h1{
+    color: white;
+    font-size: 6.5em;
+    letter-spacing: 5px;
+}
+h2{
+    color: $color;
+    font-size: 3.5em;
+}
+h3{
+    color: $color;
+    text-transform: uppercase;
+    font-size: 2.5em;
+    margin: 0;
+}
+h4{
+    color: $lightColor;
+    text-transform: uppercase;
+    font-size: 1em;
+    margin: 0;
+    line-height: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+/*
+Layout
+*/
+section{
+    min-height: 100vh;
+}
+.englobe{
+    width: 1000px;
+    margin: 0 auto;
+}
+img{
+    width: 100%;
+}
+#restaurant-head{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    &::after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba($color: black, $alpha: .5);
+        top: 0;
+        left: 0;
+    }
+    h1{
+        position: absolute;
+        z-index: 1;
+        left: 50%;
+        top: 55%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+/*
+Animation
+*/
+.hidden{
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 1s all ease-in-out;
+}
+.reveal{
+    opacity: 1;
+    transform: translateY(0);
+    transition: .5s all ease-in-out;
+}
+
