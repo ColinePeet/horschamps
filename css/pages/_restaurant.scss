@@ -19,7 +19,7 @@ Le Chef
             flex-direction: column;
             justify-content: flex-end;
             p{
-                margin-bottom: 0;
+                margin: 0;
             }
         }
     }
@@ -28,7 +28,7 @@ Le Chef
         position: absolute;
         background: #F5F4F0;
         width: 85vw;
-        height: 60%;
+        height: 40%;
         z-index: -1;
         left: 0;
     }
@@ -93,7 +93,7 @@ Le Restaurant
         position: absolute;
         background: #F5F4F0;
         width: 100vw;
-        height: 55%;
+        height: 40%;
         z-index: -1;
         left: 0;
         top: 50%;
@@ -105,7 +105,7 @@ Le Restaurant
 .ouverture{
     text-align: center;
     margin: 5em 0 7em 0;
-    font-size: 1.2em;
+    font-size: 1.1em;
     span{
         font-size: .9em;
         display: inline-block;
@@ -152,12 +152,13 @@ Nos producteurs
                     font-family: 'red hat display', sans-serif;
                     text-transform: uppercase;
                     letter-spacing: 1px;
-                    font-size: 1.5em;
+                    font-size: 1.1em;
                     font-weight: 400;
                     margin: 0;
                 }
                 p{
                     margin-bottom: 0;
+                    color: white;
                 }
             }
         }
@@ -191,15 +192,19 @@ Presse
             flex-direction: column;
             justify-content: space-between;
             h5{
-                font-size: 1.7em;
+                font-size: 1.4em;
                 font-weight: 400;
                 margin-top: .5em;
                 margin-bottom: 0;
                 letter-spacing: 1px;
             }
+            p{
+                line-height: 1.4em;
+                font-size: 1em;
+            }
             a{
                 color: black;
-                font-size: 1.1em;
+                font-size: .9em;
             }
             .article-info{
                 display: flex;
@@ -208,6 +213,7 @@ Presse
                 margin-top: 2em;
                 p{
                     margin-bottom: 0;
+                    font-size: .9em;
                 }
             }
         }

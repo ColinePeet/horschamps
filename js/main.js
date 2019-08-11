@@ -4,7 +4,7 @@ Swiper
 function initSwiper(slidesPerView){
 var swiper = new Swiper('.swiper1', {
     slidesPerView: slidesPerView,
-    spaceBetween: 20,
+    spaceBetween: 10,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
