@@ -1,0 +1,30 @@
+#traiteur{
+    margin-bottom: 2em;
+    padding: 5em 0;
+    position: relative;
+    h3{
+        text-align: center;
+    }
+    .flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 3em;
+        img{
+            width: 46%;
+            height: auto;
+        }
+        .texte{
+            width: 48%;
+        }
+    }
+    &::after{
+        content: '';
+        position: absolute;
+        background: #F5F4F0;
+        top: 0;
+        width: 100vw;
+        height: 65%;
+        z-index: -1;
+    }
+}

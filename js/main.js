@@ -58,14 +58,6 @@ $(window).scroll(function(){
       $(this).addClass("hidden");
     }
   });
-  $('.bg-anim').each(function(){
-    if(isScrolledIntoView($(this))){
-      // setTimeout(function(){ 
-        $(this).addClass("reveal");
-        console.log(this);
-      // }, 1000);
-    }
-  })
 });
 
 

@@ -1,0 +1,49 @@
+#stef-aure{
+    margin: 7em 0;
+    padding: 2em 0;
+    position: relative;
+    min-height: 0;
+    h2{
+        margin-top: 0;
+    }
+    .flex{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img{
+            width: 50%;
+        }
+        .texte{
+            width: 45%;
+        }
+    }
+}
+
+#histoire{
+    padding: 5em 0;
+    position: relative;
+    text-align: center;
+    min-height: 0;
+    background: #F5F4F0;
+    h3{
+        margin-bottom: 1em;
+    }
+    .texte{
+        margin: 0 auto;
+    }
+}
+
+.travaux{
+    text-align: center;
+    margin-top: 5em;
+    h3{
+        margin-bottom: 1em;
+    }
+}
+
+#project{
+    margin-top: 2em;
+    h3{
+        margin-bottom: 1em;
+    }
+}
