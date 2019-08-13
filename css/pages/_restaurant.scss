@@ -6,7 +6,7 @@ Le Chef
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5em 0;
+    padding: 5em 0;
     h3{
         margin-top: 0;
     }
@@ -214,3 +214,116 @@ Presse
 }
 
 
+@media screen and(max-width:900px){
+    #chef, #restaurant{
+        .flex{
+            flex-direction: row-reverse;
+            .texte{
+                width: 55%;
+            }
+            .image{
+                width: 35%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+    .swiper1{
+        height: 40vh;
+    }
+    #producteurs{
+        .col-3{
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 10px;
+            .single-prod{
+                margin-bottom: 10px;
+            }
+        }
+    }
+    #presse{
+        min-height: 0;
+    }
+}
+
+@media screen and(max-width:700px){
+    #chef{
+        .flex{
+            flex-direction: column-reverse;
+            .texte{
+                width: 100%;
+            }
+            .image{
+                display: none;
+            }
+        }
+    }
+    .swiper1{
+        height: 50vh;
+    }
+    #restaurant{
+        padding-bottom: 5em;
+        .flex{
+            flex-direction: column-reverse;
+            margin-top: 2em;
+            .texte{
+                width: 100%;
+            }
+            .image{
+                display: none;
+            }
+        }
+        &::after{
+            height: 100%;
+        }
+    }
+    .ouverture{
+        margin-top: 4em;
+        margin-bottom: 4em;
+        font-size: 1em;
+        p{
+            font-size: 1em;
+            text-align: left;
+        }
+    }
+    #producteurs{
+        margin-bottom: 6em;
+        .col-3{
+            grid-template-columns: 1fr;
+            grid-column-gap: 0;
+            margin-top: 2em;
+            .single-prod{
+                margin-bottom: 10px;
+                height: 150px;
+            }
+        }
+    }
+    #presse{
+        padding: 4em 0;
+        .englobe{
+            margin-top: 3em;
+            .article{
+                flex-direction: column;
+                .article-bg{
+                    height: 30vh;
+                    width: 100%;
+                }
+                .texte{
+                    width: 100%;
+                    h5{
+                        font-size: 1.2em;
+                        margin-top: 1em;
+                    }
+                    p{
+                        font-size: .9em;
+                        line-height: 1.3em;
+                        margin: .7em 0;
+                    }
+                    .article-info{
+                        margin-top: .7em;
+                    }
+                }
+            }
+        }
+    }
+}

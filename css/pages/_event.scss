@@ -28,3 +28,39 @@
         z-index: -1;
     }
 }
+
+
+/*
+Responsive
+*/
+@media screen and(max-width:900px){
+    #traiteur{
+        margin-bottom: 0;
+        .flex{
+            img{
+                width: 35%;
+            }
+            .texte{
+                width: 60%;
+            }
+        }
+    }
+}
+
+@media screen and(max-width:700px){
+    #traiteur{
+        .flex{
+            flex-direction: column;
+            img{
+                width: 60%;
+                display: none;
+            }
+            .texte{
+                width: 100%;
+            }
+        }
+        &::after{
+            height: 100%;
+        }
+    }
+}

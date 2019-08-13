@@ -30,20 +30,18 @@ a{
 Title
 */
 h1,h2,h3,h4{
-    font-family: 'red hat display', sans-serif;
-    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
 h1{
     color: white;
     font-size: 5.5em;
-    letter-spacing: 2px;
-    // font-family: 'lora', serif;
+    font-weight: 300;
 }
 h2{
     color: $color;
     font-size: 3.2em;
-    // font-family: 'lora', serif;
+    font-weight: 300;
 
 }
 h3{
@@ -51,16 +49,17 @@ h3{
     text-transform: uppercase;
     font-size: 2.2em;
     margin: 0;
-    // font-family: 'lora', serif;
+    font-weight: 400;
     margin-bottom: 0;
 
 }
 h4{
     color: $lightColor;
     text-transform: uppercase;
-    font-size: .8em;
+    font-size: .9em;
     margin: 0;
-    letter-spacing: 2px;
+    font-weight: 400;
+    letter-spacing: 1px;
     line-height: 1.5em;
     margin-bottom: 2em;
 }
@@ -114,12 +113,61 @@ Animation
 */
 .hidden{
     opacity: 0;
-    transform: translateY(50px);
+    // transform: translateX(-50px);
     transition: 1s all ease-in-out;
 }
 .reveal{
     opacity: 1;
-    transform: translateY(0);
+    // transform: translateX(0);
     transition: .5s all ease-in-out;
 }
 
+
+
+/*
+Responsive
+*/
+@media screen and(max-width:1000px){
+    .englobe{
+        width: 90vw;
+    }
+    p{
+        line-height: 1.4em
+    }
+    h1{
+        font-size: 4em;
+    }
+    h2{
+        font-size: 2.5em
+    }
+    h3{
+        font-size: 1.8em;
+    }
+    section{
+        min-height: 0;
+    }
+    #home, #restaurant-head, #chambres-head, #evenements-head, #propos-head{
+        height: 100vh;
+    }
+}
+
+@media screen and(max-width:700px){
+    .englobe{
+        width: 90vw;
+    }
+    p{
+        line-height: 1.4em
+    }
+    h1{
+        font-size: 2.5em;
+    }
+    h2{
+        font-size: 1.5em
+    }
+    h3{
+        font-size: 1.5em;
+    }
+    h4{
+        font-size: .8em;
+    }
+}

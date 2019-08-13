@@ -54,13 +54,8 @@ $(window).scroll(function(){
     if(isScrolledIntoView($(this))){
       $(this).addClass("reveal");
     }
-    else{
-      $(this).addClass("hidden");
-    }
   });
 });
-
-
 
 
 function isScrolledIntoView(elem){

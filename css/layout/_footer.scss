@@ -29,7 +29,7 @@ footer{
         }
         img{
             width: 20px;
-            margin-left: 5px;
+            margin-left: 8px;
         }
     }
     .info{
@@ -76,6 +76,36 @@ footer{
         margin-top: 1em;
         p{
             color: rgb(231, 231, 231);
+        }
+    }
+}
+
+
+/*
+Responsive
+*/
+@media screen and(max-width:900px){
+    footer{
+        .info{
+            width: 95vw;
+        }
+    }
+}
+
+@media screen and(max-width:700px){
+    footer{
+        .info{
+            flex-direction: column;
+            .contact, .info, .social{
+                width: 100%;
+            }
+        }
+        .newsletter{
+            input{
+                &.champ{
+                    width: 80%;
+                }
+            }
         }
     }
 }
